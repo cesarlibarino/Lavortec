@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Lavortec | Lava Sofás e Ar-condicionados</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      overflow-x:hidden;
+    }
+
+    body{
+      font-family:'Plus Jakarta Sans', sans-serif;
+      background:#fff;
+      overflow-x:hidden;
+      color:#0f172a;
+    }
+
+    .hero-bg{
+      background:
+      linear-gradient(rgba(2,6,23,.75), rgba(2,6,23,.82)),
+      url('/img/hero.jpg');
+
+      background-size:cover;
+      background-position:center;
+    }
+
+    .btn-pulse{
+      animation:pulse 2s infinite;
+    }
+
+    @keyframes pulse{
+      0%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(59, 130, 246, 0.6);
+      }
+
+      70%{
+        transform:scale(1.03);
+        box-shadow:0 0 0 18px rgba(59, 130, 246, 0);
+      }
+
+      100%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(59, 130, 246, 0);
+      }
+    }
+
+    .glass{
+      backdrop-filter:blur(10px);
+      background:rgba(255,255,255,.85);
+    }
+
+    .before-after img{
+      transition:.4s;
+    }
+
+    .before-after:hover img{
+      transform:scale(1.05);
+    }
+
+    .floating-whatsapp{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      z-index:999;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="fixed top-0 left-0 w-full z-50 glass border-b border-slate-200">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <div class="flex items-center justify-between h-20">
+
+        <div class="flex items-center gap-4">
+
+          <img
+            src="/img/logo.png"
+            alt="Logo Lavortec"
+            class="h-16 w-auto"
+          />
+
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-8">
+
+          <a href="#servicos" class="font-semibold hover:text-blue-500 transition">
+            Serviços
+          </a>
+
+          <a href="#resultados" class="font-semibold hover:text-blue-500 transition">
+            Resultados
+          </a>
+
+          <a href="#avaliacoes" class="font-semibold hover:text-blue-500 transition">
+            Avaliações
+          </a>
+
+          <a
+            href="https://api.whatsapp.com/send?1=pt_BR&phone=5577988366150&text=Oi,%20gostaria%20de%20um%20orçamento"
+            class="bg-blue-500 hover:bg-blue-400 transition px-6 py-3 rounded-2xl font-black text-white shadow-lg"
+            target="_blank"
+          >
+            Solicitar orçamento
+          </a>
+
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <section class="hero-bg min-h-screen flex items-center">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-32 w-full">
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <div>
+
+          <div class="inline-flex items-center gap-2 bg-blue-500 text-white px-5 py-2 rounded-full font-black text-xs uppercase tracking-wider">
+
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+
+            Lavortec Premium
+
+          </div>
+
+          <h1 class="mt-8 text-5xl lg:text-7xl font-extrabold text-white leading-tight">
+
+            Seu estofado e ar-condicionado
+            <span class="text-blue-400">
+              como novos.
+            </span>
+
+          </h1>
+
+          <p class="mt-8 text-lg text-slate-200 leading-relaxed max-w-xl">
+
+            Eliminamos ácaros, fungos, bactérias e mau cheiro com limpeza profunda, secagem rápida e excelência técnica.
+
+          </p>
+
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
+
+            <a
+              href="https://api.whatsapp.com/send?1=pt_BR&phone=5577988366150&text=Oi,%20gostaria%20de%20um%20orçamento"
+              class="btn-pulse bg-blue-500 hover:bg-blue-400 text-white font-black py-5 px-8 rounded-2xl text-center transition shadow-lg"
+              target="_blank"
+            >
+
+              Orçamento pelo WhatsApp
+
+            </a>
+
+            <a
+              href="#resultados"
+              class="border border-white/20 hover:bg-white/10 text-white font-bold py-5 px-8 rounded-2xl text-center transition"
+            >
+
+              Ver resultados
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="py-24 bg-white" id="servicos">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <div class="text-center max-w-3xl mx-auto">
+
+        <span class="text-indigo-800 font-black uppercase tracking-[4px] text-sm">
+          nossos serviços
+        </span>
+
+        <h2 class="mt-4 text-4xl lg:text-5xl font-extrabold text-indigo-950">
+          Soluções completas de higienização
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+        <div class="bg-slate-50 rounded-[32px] p-8 border border-slate-100 hover:-translate-y-2 transition shadow-sm hover:shadow-2xl">
+
+          <div class="w-16 h-16 bg-indigo-900 rounded-2xl flex items-center justify-center">
+
+            <i data-lucide="armchair" class="text-white w-8 h-8"></i>
+
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold text-indigo-950">
+            Lava Sofás e Estofados
+          </h3>
+
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Removemos manchas, bactérias, fungos e odores devolvendo a vida ao seu sofá.
+          </p>
+
+        </div>
+
+        <div class="bg-slate-50 rounded-[32px] p-8 border border-slate-100 hover:-translate-y-2 transition shadow-sm hover:shadow-2xl">
+
+          <div class="w-16 h-16 bg-indigo-900 rounded-2xl flex items-center justify-center">
+
+            <i data-lucide="wind" class="text-white w-8 h-8"></i>
+
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold text-indigo-950">
+            Ar-condicionado
+          </h3>
+
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Respire um ar mais puro, aumente a eficiência do aparelho e reduza o consumo de energia.
+          </p>
+
+        </div>
+
+        <div class="bg-slate-50 rounded-[32px] p-8 border border-slate-100 hover:-translate-y-2 transition shadow-sm hover:shadow-2xl">
+
+          <div class="w-16 h-16 bg-indigo-900 rounded-2xl flex items-center justify-center">
+
+            <i data-lucide="shield-check" class="text-white w-8 h-8"></i>
+
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold text-indigo-950">
+            Impermeabilização
+          </h3>
+
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Crie uma barreira invisível contra líquidos e sujeiras, aumentando a durabilidade.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="py-24 bg-slate-100" id="resultados">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <div class="text-center">
+
+        <span class="text-indigo-800 font-black uppercase tracking-[4px] text-sm">
+          antes e depois
+        </span>
+
+        <h2 class="mt-4 text-4xl lg:text-5xl font-extrabold text-indigo-950">
+          Veja a nossa qualidade
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10 mt-16">
+
+        <div class="before-after bg-white rounded-[40px] overflow-hidden shadow-xl">
+
+          <img
+            src="/img/antes.jpg"
+            class="w-full h-96 object-cover"
+            alt="Estofado antes da limpeza Lavortec"
+          />
+
+          <div class="p-8">
+
+            <span class="bg-red-100 text-red-500 px-4 py-2 rounded-full font-black uppercase text-xs">
+              Antes
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="before-after bg-white rounded-[40px] overflow-hidden shadow-xl">
+
+          <img
+            src="/img/depois.jpg"
+            class="w-full h-96 object-cover"
+            alt="Estofado depois da limpeza Lavortec"
+          />
+
+          <div class="p-8">
+
+            <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full font-black uppercase text-xs">
+              Depois
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="py-24 bg-indigo-950 text-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <div class="text-center">
+
+        <span class="text-blue-400 font-black uppercase tracking-[4px] text-sm">
+          como funciona
+        </span>
+
+        <h2 class="mt-4 text-4xl lg:text-5xl font-extrabold">
+          Atendimento rápido e profissional
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-10 mt-20">
+
+        <div>
+
+          <div class="w-16 h-16 rounded-full bg-blue-500 text-white flex items-center justify-center font-black text-2xl">
+            1
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold">
+            Chame no WhatsApp
+          </h3>
+
+          <p class="mt-4 text-slate-300">
+            Envie uma foto do seu estofado ou ar-condicionado para um orçamento na hora.
+          </p>
+
+        </div>
+
+        <div>
+
+          <div class="w-16 h-16 rounded-full bg-blue-500 text-white flex items-center justify-center font-black text-2xl">
+            2
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold">
+            Vamos até você
+          </h3>
+
+          <p class="mt-4 text-slate-300">
+            Serviço realizado no conforto da sua casa, sem sujeira e com equipamentos de ponta.
+          </p>
+
+        </div>
+
+        <div>
+
+          <div class="w-16 h-16 rounded-full bg-blue-500 text-white flex items-center justify-center font-black text-2xl">
+            3
+          </div>
+
+          <h3 class="mt-6 text-2xl font-bold">
+            Ambiente renovado
+          </h3>
+
+          <p class="mt-4 text-slate-300">
+            Aproveite a sua casa com a saúde e o bem-estar que a sua família merece.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="py-24 bg-white" id="avaliacoes">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <div class="text-center">
+
+        <span class="text-indigo-800 font-black uppercase tracking-[4px] text-sm">
+          avaliações
+        </span>
+
+        <h2 class="mt-4 text-4xl lg:text-5xl font-extrabold text-indigo-950">
+          O
